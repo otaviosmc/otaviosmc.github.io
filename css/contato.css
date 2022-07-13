@@ -1,0 +1,45 @@
+.contato {
+  color: white;
+  background: #000;
+}
+
+.contato-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  align-items: center;
+  justify-items: center;
+  padding: 100px;
+  margin: 0 auto;
+}
+
+.texto-contato {
+  padding: 0px 50px;
+  font-size: 1.5rem;
+}
+
+.contatos {
+  font-size: 140%;
+}
+
+@media(max-width: 800px){
+  .contato-content{
+    display: block;
+  }
+
+  .contatos{
+    text-align: center;
+    margin-top: 20px;
+    background: #141414;
+    padding: 10px 0px;
+    word-break: break-all;
+  }
+
+  .contato-content p{
+    font-size:1rem;
+  }
+
+  .texto-contato{
+    padding: 0;
+  }
+}

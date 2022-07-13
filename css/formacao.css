@@ -1,0 +1,156 @@
+.formacao {
+  background-color: #141414;
+  margin: 0;
+}
+
+.formacoes {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 40px auto;
+  flex-wrap: wrap;
+}
+
+.desc-formacoes {
+  background: black;
+  height: 120px;
+  width: 200px;
+  border-radius: 5px;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.desc-formacoes p,
+.cursos-idiomas h3 {
+  color: #a3a3a3;
+}
+
+.desc-formacoes h3 {
+  color: white;
+}
+
+.desc-formacoes h3::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 20px;
+  left: -20px;
+  top: 4px;
+  background-image: linear-gradient(to bottom, #b6f829, #67dd0a);
+}
+
+.formacao-content {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1.5fr;
+  justify-items: center;
+  align-items: center;
+  gap: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 30px 0px 30px;
+}
+
+.formacao .subt {
+  color: #000;
+  word-break: break-all;
+  max-width: 4ch;
+}
+
+.texto-formacao {
+  font-size: 1.5rem;
+  color: #a3a3a3;
+  padding: 0px 40px;
+}
+
+.texto-formacao strong,
+.cursos-idiomas p {
+  color: white;
+}
+
+.divisao-idiomas {
+  grid-column: 2;
+  width: 100%;
+  padding-bottom: 40px;
+  display: grid;
+  row-gap: 25px;
+  position: relative;
+}
+
+.cursos-idiomas {
+  position: relative;
+  display: grid;
+  row-gap: 10px;
+}
+
+.conteudo-cursos-idiomas {
+  display: grid;
+  row-gap: 5px;
+  position: relative;
+}
+
+.tipo-curso-idioma {
+  font-size: 110%;
+}
+
+#crs h3::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url("../img/cursos.svg") no-repeat center;
+  position: absolute;
+  left: -30px;
+}
+
+#idms h3::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url("../img/idiomas.svg") no-repeat center;
+  position: absolute;
+  left: -30px;
+}
+
+.divisao-idiomas::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute;
+  top: 150px;
+  left: -300px;
+}
+
+@media(max-width: 770px){
+  .formacao-content{
+    display: block;
+  }
+  .formacao .subt {
+    font-size: 500%;
+    word-break: normal;
+    max-width: 0ch;
+    margin-bottom: 30px;
+    color: white;
+  }
+  .divisao-idiomas, .divisoes-formacao{
+    padding: 20px;
+  }
+}
+
+@media (max-width: 530px){
+  .formacao .subt{
+    font-size:400%
+  }
+}
+
+@media (max-width: 435px){
+    .formacao .subt{
+      font-size: 250%;
+    }
+}

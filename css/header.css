@@ -1,0 +1,32 @@
+.header1 {
+  margin: 0 100px;
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.menu1 a {
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  line-height: 2.6;
+  text-decoration: none;
+  color: black;
+}
+
+.header1 h1{
+  font-size: 4rem;
+}
+
+@media (max-width: 440px){
+  .header1 h1{
+    font-size: 2rem;  
+  }
+}
